@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@layer base {
+    :root {
+        --header-height: 56px;
+        --footer-height: 56px;
+        --content-height: calc(100% - var(--header-height) - var(--footer-height));
+    }
+}
+
+body {
+    @apply h-dvh overflow-x-hidden dark:bg-indigo-950;
+}
+
+#root {
+    @apply h-full relative p-2;
+}
